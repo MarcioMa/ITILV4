@@ -62,7 +62,11 @@ button{
     text-align: center;
     display: none; /* Inicialmente oculta */
 }
-
+#Resp h2{
+    background-color: #333;
+    color: #FFF;
+    text-shadow: 2px 2px black;
+}
 footer{
     background-color: #333;
     color: #FFF;
