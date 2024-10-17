@@ -1,13 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap');
-
+@font-face{
+    font-family: 'digital-clock-font';
+    src: url('font/digital-7.ttf');
+}
 *{
     margin: 0%;
     padding: 0%;
 }
 body{
-    background-color: darkmagenta;
-    background-image: linear-gradient(rgb(131, 5, 83), rgb(201, 59, 24));
+    background-color: white;
+    background-image: linear-gradient(rgb(102, 99, 95), rgb(163, 154, 149));
 }
 h1{
     color: #FFF;
@@ -16,7 +19,7 @@ h1{
     font-optical-sizing: auto;
     text-align: center;
     margin: 20px;
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px #333;
 }
 fieldset{
     background-color: #FFF;
@@ -27,7 +30,7 @@ fieldset{
 legend{
     text-transform: uppercase;
     font-size: 14pt;
-    padding-top: 25px;
+    padding-top: 40px;
 }
 input[type="radio"]{
     margin-bottom: 10px;
@@ -76,4 +79,19 @@ footer{
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 150px;
+}
+#tempo{
+    position: fixed;
+    right: 10px;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-image: url("/bgsilver.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color:black;
+    font-family:'digital-clock-font';
+    font-size: 28pt;
+    font-weight: bold;
 }
