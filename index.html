@@ -1,57 +1,61 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Treinamento ITIL V4</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles.css" /> 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js"></script>
-</head>
-<body onload="embaralharConteudo()">
-    <div class="content">
-        <h1>Treinamento simulado ITIL V4</h1>
-        <hr>
-        <div id="tempo">60:00</div>
-    </div>
-    
-    <script>
-        let totalSeconds = 60*60;
-        const timerElement = document.getElementById('tempo');
-
-        const updateTimer = () =>{
-            const minutes = Math.floor(totalSeconds / 60);
-            const seconds = totalSeconds % 60;
-
-            timerElement.textContent = `${String(minutes).padStart(2,'0')}:${String(seconds).padStart(2,'0')}`;
-
-            if(totalSeconds > 0){
-                totalSeconds--;
-
-                if(minutes <= 15){
-                    timerElement.style.color = '#f00';
-                }
-            } else {
-                clearInterval(timerInterval);
-                alert("O tempo acabou!");
-                verificarRespostas();
+    <head>
+        <title>Treinamento ITIL V4</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            body{
+                text-align: center;
+                margin: 0%;
+                padding: 0%;
             }
-        };
-
-        const timerInterval = setInterval(updateTimer, 1000);
-    </script>
-
-    <div>
-        <button onclick="verificarRespostas(); clearInterval(timerInterval);">Enviar Respostas</button>
-        <button onclick="window.location.reload()">Limpar Respostas</button> 
-    </div>
-    <div id="Resp" hidden>
-         <h2>Resultados</h2>
-         <canvas id="grafico" width="200" height="200"></canvas>
-    </div>
+            h1{
+                font-size: 36pt;
+                text-align: center;
+                text-shadow: 1px 1px rgba(0,0 ,0, 1);
+                color: goldenrod;
+            }
+            button{
+                padding: 15px 25px;
+                margin-top: 15px;
+                margin-right: 10px;
+                font-size: 24px;
+                text-align: center;
+                cursor: pointer;
+                outline: none;
+                color: #FFF;
+                background-color: #04AA6D;
+                border: none;
+                border-radius: 15px;
+                box-shadow: 0 5px #333;
+            }
+            button:hover{background-color: #3e8e41;}
+            button:active{
+                background-color: #3e8e41;
+                box-shadow: 0 5px #333;
+                transform: translateY(4px);
+            }
+            footer{
+                background-color: #333;
+                color: #FFF;
+                text-transform: uppercase;
+                text-align: center;
+                bottom: 0%;
+                width: 100%;
+                height: 40px;
+                position: fixed;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Bem vindo ao Simulado ITIL v4</h1>
+        <p>O tempo para concluir simulado é de 60 minutos.
+            <br>Ao finalizar tempo será gerado resultados mesmo não tenha finalizado</p>
+            <button onclick="window.location.href='/Simulado.html'">Iniciar teste</button>
+    </body>
     <footer>
         <p>&#169; copyright 2024 Desenvolvido por Marcio M. Araujo</p>
     </footer>
-</body>
 </html>

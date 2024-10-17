@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Treinamento ITIL V4</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" /> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</head>
+<body onload="embaralharConteudo()">
+    <div class="content">
+        <h1>Treinamento simulado ITIL V4</h1>
+        <hr>
+        <div id="tempo">60:00</div>
+    </div>
+    
+    <script>
+        let totalSeconds = 60*60;
+        const timerElement = document.getElementById('tempo');
+
+        const updateTimer = () =>{
+            const minutes = Math.floor(totalSeconds / 60);
+            const seconds = totalSeconds % 60;
+
+            timerElement.textContent = `${String(minutes).padStart(2,'0')}:${String(seconds).padStart(2,'0')}`;
+
+            if(totalSeconds > 0){
+                totalSeconds--;
+
+                if(minutes <= 15){
+                    timerElement.style.color = '#f00';
+                }
+            } else {
+                clearInterval(timerInterval);
+                alert("O tempo acabou!");
+                verificarRespostas();
+            }
+        };
+
+        const timerInterval = setInterval(updateTimer, 1000);
+    </script>
+
+    <div>
+        <button onclick="verificarRespostas(); clearInterval(timerInterval);">Enviar Respostas</button>
+        <button onclick="window.location.reload()">Reiniciar teste</button> 
+    </div>
+    <div id="Resp" hidden>
+         <h2>Resultados</h2>
+         <canvas id="grafico" width="200" height="200"></canvas>
+    </div>
+    <footer>
+        <p>&#169; copyright 2024 Desenvolvido por Marcio M. Araujo</p>
+    </footer>
+</body>
+</html>
