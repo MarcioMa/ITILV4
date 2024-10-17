@@ -104,7 +104,7 @@ let respostasCorretas = [];
                     correta: 3
                 },
                 {
-                    texto: "O que significa 'Começar onde você está' no contexto do ITIL v4?",
+                    texto: "O que significa \"Começar onde você está\" no contexto do ITIL v4?",
                     respostas: [
                         "Implementar novas ferramentas sem considerar o que já existe",
                         "Avaliar a situação atual antes de fazer mudanças",
@@ -124,7 +124,7 @@ let respostasCorretas = [];
                     correta: 0
                 },
                 {
-                    texto: "O que é um 'fluxo de valor' no ITIL v4?",
+                    texto: "O que é um \"fluxo de valor\" no ITIL v4?",
                     respostas: [
                         "Uma sequência de etapas que cria um produto final",
                         "Um conjunto de ferramentas utilizadas na gestão de serviços",
@@ -144,7 +144,7 @@ let respostasCorretas = [];
                     correta: 1
                 },
                 {
-                    texto: "O que é 'pensar e trabalhar de forma holística' no ITIL v4 ?",
+                    texto: "O que é \"pensar e trabalhar de forma holística\" no ITIL v4 ?",
                     respostas: [
                         "Focar apenas nas equipes técnicas",
                         "Considerar todos os aspectos de um serviço e suas interações",
@@ -164,7 +164,7 @@ let respostasCorretas = [];
                     correta: 1
                 },
                 {
-                    texto: "Como a categorização de incidentes auxilia a prática do 'gerenciamento de incidente'?",
+                    texto: "Como a categorização de incidentes auxilia a prática do \"gerenciamento de incidente\"?",
                     respostas: [
                         "Ela ajuda a direcionar o incidente para a área de suporte correta",
                         "Ela determina a prioridade atribuída ao incidente",
@@ -184,17 +184,17 @@ let respostasCorretas = [];
                     correta: 1
                 },
                 {
-                    texto: "Qual é uma recomendação da prática de 'melhoria contínua'?",
+                    texto: "Qual é uma recomendação da prática de \"melhoria contínua\"?",
                     respostas: [
-                        "Mesmo que pequena, deve haver pelo uma equipe dedicada a liderar os esforços de 'melhoria contínua'",
+                        "Mesmo que pequena, deve haver pelo uma equipe dedicada a liderar os esforços de \"melhoria contínua\"",
                         "Todas as melhorias devem ser gerenciadas como projetos de multiplas fases",
-                        "A 'melhoria contínua' deve ser isolada de outras práticas",
+                        "A \"melhoria contínua\" deve ser isolada de outras práticas",
                         "Os fornecedores externos devem ser excluídos das iniciativas de melhoria"
                     ],
                     correta: 0
                 },
                 {
-                    texto: "Qual é um pontencial benefício de usar uma ferramenta de gerenciamento de serviço de TI para suporta a prática de 'gerencimento de incidente'?",
+                    texto: "Qual é um pontencial benefício de usar uma ferramenta de gerenciamento de serviço de TI para suporta a prática de \"gerencimento de incidente\"?",
                     respostas: [
                         "Pode garantir que a causa de incidentes seja identificada dentro dos prazos acordados",
                         "Pode fornecer a correspondência automatizada entre incidentes e problemas ou erros conhecidos",
@@ -224,7 +224,7 @@ let respostasCorretas = [];
                     correta: 0
                 },
                 {
-                    texto: "O que seria suportado pela prática de 'gerencimento de requição de serviço'?",
+                    texto: "O que seria suportado pela prática de \"gerencimento de requição de serviço\"?",
                     respostas: [
                         "Uma requisição para autorizar uma mudança que poderia afetar um serviço",
                         "Uma requisição de um usuário para algo que é parte normal da entrega de serviço",
@@ -322,7 +322,88 @@ let respostasCorretas = [];
                         "Garantir que informações precisas e confiáveis sobre a configuração dos serviços dos fornecedores estejam disponíveis quando e onde forem necessárias"
                     ],
                     correta: 0
+                },
+                {
+                    texto: "Quais são dois tipos de custos que um consumidor de serviço deve avaliar?",
+                    respostas: [
+                        "O preço do serviço e o custo de criar o serviço",
+                        "Os custos removidos pelo serviço e os custos impostos pelo serviço",
+                        "O custo de fornecer o serviço e os custo de melhorá-lo",
+                        "O curto do software e o custo do hardware"
+                    ],
+                    correta: 1
+                },
+                {
+                    texto: "Qual é o popósito da prática de \"central de serviço\"?",
+                    respostas: [
+                        "Reduzir a probalidade e o impacto de incidentes ao identificar suas causas reais e pontenciais",
+                        "Maximazar o número de mudanças bem-sucedidas de TI ao garantir que os riscos sejam avaliados adequadamente",
+                        "Capturar a demanda de resolução de incidentes e requisições de serviço",
+                        "Definir metas claras e baseadas nos negócios para o desempenho dos serviços"
+                    ],
+                    correta: 2
+                },
+                {
+                    texto: "Como uma organização deve adotar métodos de melhoria contínua?",
+                    respostas: [
+                        "Usando um novo método para cada melhoria que a organização faz",
+                        "Selecionando alguns métodos principais para os tipos de melhoria que a organização faz",
+                        "Desenvolvendo a habilidade de usar a maior quantidade possível de métodos de melhoria",
+                        "Selecionado um método único para todas as melhorias que a organização faz"
+                    ],
+                    correta: 1
+                },
+                {
+                    texto: "Qual conceito da ITIL descreve a governança?",
+                    respostas: [
+                        "Os sete principios orientadores",
+                        "As quatro dimensões do gerenciamento de serviço",
+                        "A cadeia de valor de serviço",
+                        "O sistema de valor de serviço"
+                    ],
+                    correta: 3
+                },
+                {
+                    texto: "Qual é a recomendação da prática de \"central de serviço\"?",
+                    respostas: [
+                        "As centrais de serviço devem evitar o uso de automação.",
+                        "As centrais de serviço devem ser altamente técnicas.",
+                        "As centrais de serviço devem entender a organização de forma abrangente.",
+                        "As centrais de serviço devem ser compostas por uma equipe física em um único local fixo."
+                    ],
+                    correta: 2
+                },
+                {
+                    texto: "Qual princípio orientador recomenda organizar o trablho em partes menores e gerenciáveis que podem ser realizadas e concluídas de maneira oportuna?",
+                    respostas: [
+                        "Foco no valor",
+                        "Começar de onde você está",
+                        "Progredir iterativamente com feedback",
+                        "Colaborar e promover visibilidade"
+                    ],
+                    correta: 2
+                },
+                {
+                    texto: "O que é uma mudança padrão?",
+                    respostas: [
+                        "Uma mudança bem entendida, plenamente documentada e pré-autorizada",
+                        "Uma mudança que precisa ser avaliada, autorizada e programada por uma autoridade de mudança",
+                        "Uma mudança que não precisa de uma avaliação de risco porque é necessário para resolver um incidente",
+                        "Uma mudança avaliada, autorizada e programada como parte da \"melhoria contínua\""
+                    ],
+                    correta: 0
+                },
+                {
+                    texto: "O que acontece se uma solução de contorno se torna o meio permanente de lidar com um problema que não pode ser resolvido de forma rentável?",
+                    respostas: [
+                        "Uma requisição de mudança é enviada para a habilitação de mudança.",
+                        "O gerenciamento de problema restaura o serviço o mais rápido possível.",
+                        "O problema permanece com o status de erro conhecido.",
+                        "O registro de problema é excluído."
+                    ],
+                    correta: 2
                 }
+
             ];
 
             // Embaralha as perguntas
