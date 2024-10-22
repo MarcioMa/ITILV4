@@ -374,7 +374,7 @@ let respostasCorretas = [];
                     correta: 2
                 },
                 {
-                    texto: "Qual princípio orientador recomenda organizar o trablho em partes menores e gerenciáveis que podem ser realizadas e concluídas de maneira oportuna?",
+                    texto: "Qual princípio orientador recomenda organizar o trabalho em partes menores e gerenciáveis que podem ser realizadas e concluídas de maneira oportuna?",
                     respostas: [
                         "Foco no valor",
                         "Começar de onde você está",
@@ -524,7 +524,7 @@ let respostasCorretas = [];
                         y: {
                             beginAtZero: true,
                             ticks: {
-                                stepSize: 1
+                                stepSize: 3
                             }
                         }
                     }
