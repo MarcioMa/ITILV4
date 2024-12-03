@@ -453,8 +453,10 @@ let respostasCorretas = [];
 
                         if (valorSelecionado === respostaCorreta) {
                             acertos++;
+                            respostaSelecionada.parentElement.style.backgroundColor = "green";
                         } else {
                             erros++;
+                            respostaSelecionada.parentElement.style.backgroundColor = "red";
                         }
                     } else {
                         erros++; // Se não houver resposta, conta como erro
