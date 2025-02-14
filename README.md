@@ -32,11 +32,4 @@ Eu sou uma pessoa desenvolvedora full-stack...
 ## Referência
 
  - [PMG Academy](http://pmgacademy.com/itil-4-foundation)
- - [Youtube Canal Prof. Adriano](http://youtube/@ProfAdrianoMartinsAntonio)
-
-
-
-## Suporte
-
-Para suporte, mande um email para marmac1979@gmail.com.
-
+ - [Youtube Canal Prof.
